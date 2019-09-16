@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font: 14px/1.6 -apple-system-font,BlinkMacSystemFont,Helvetica Neue,PingFang SC,Hiragino Sans GB,Microsoft YaHei UI,Microsoft;
+        }
+        .wrap {
+            background: url('img/wx-bg.jpg') repeat-x;
+        }
+        .container {
+            width: 968px;
+            height: 75px;
+            margin: 0 auto;
+        }
+        .logo {
+            float: left;
+            margin-top: 14px;
+        }
+        .container .nav-ul {
+            float: right;
+            overflow: hidden;
+        }
+         .container .nav-li {
+             float: left;
+             list-style-type: none;
+             line-height: 33px;
+             height: 33px;
+             margin-top: 21px;
+             padding: 0 2px;
+        }
+        .container .sy-li {
+             float: left;
+             list-style-type: none;
+             line-height: 33px;
+             height: 33px;
+             margin-top: 21px;
+             padding: 0 2px;
+        }
+        .container .sy-li a {
+            text-decoration: none;
+            color: #ffffff;
+            background: url("img/nav.png") left;
+            padding-left: 10px;
+            line-height: 33px;
+            height: 33px;
+            display: inline-block;
+        }
+        .container .sy-li span {
+            color: #ffffff;
+            background: url("img/nav.png") right;
+            padding-right: 10px;
+            line-height: 33px;
+            height: 33px;
+            display: inline-block;
+        }
+
+        .container .nav-li a {
+            text-decoration: none;
+            color: #ffffff;
+            padding-left: 10px;
+            line-height: 33px;
+            height: 33px;
+            display: inline-block;
+        }
+        .container .nav-li span {
+            color: #ffffff;
+            padding-right: 10px;
+            line-height: 33px;
+            height: 33px;
+            display: inline-block;
+        }
+        .container .nav-li a:hover {
+            background: url("img/nav.png") left;
+        }
+        .container .nav-li a:hover span{
+            background: url("img/nav.png") right;
+        }
+        .intro {
+             height: 424px;
+             width: 968px;
+             margin: 0 auto;
+             margin-bottom: 44px;
+             overflow: hidden;
+             position: relative;
+        }
+        .life {
+            margin-top: 50px;
+            font-size: 26px;
+            font-weight: 400;
+        }
+        .Introduction{
+            font-size: 16px;
+            color: #979797;
+            margin: .33em 0;
+        }
+        .download {
+            background: url("img/download.png") no-repeat;
+            display: inline-block;
+            width: 224px;
+            height: 64px;
+            margin-top: 15px;
+        }
+        .intro li {
+            list-style-type: none;
+        }
+        .intro .feature {
+            float: left;
+            display: block;
+            margin: 10px 11px 0 0;
+            height: 6px;
+            width: 6px;
+            border-radius: 5px;
+            background-color: #999;
+        }
+        .intro  .dot {
+            text-decoration: none;
+            color: #609700;
+            cursor: pointer;
+            outline: none;
+        }
+        .intro li {
+            height: 25px;
+        }
+        .intro .ul-left {
+            margin-top: 8px;
+        }
+        .img {
+            width: 490px;
+            height: 404px;
+            position: absolute;
+            right: 60px;
+            top: 20px;
+        }
+        .gray {
+            text-decoration: none;
+            color: #609700;
+            cursor: pointer;
+            outline: none;
+        }
+        .three-point {
+            position: absolute;
+            right: 250px;
+            top: 380px;
+            z-index: 100;
+            overflow: hidden;
+        }
+        .three-point li {
+            display: inline-block;
+            /*height: 26px;*/
+            /*line-height: 26px;*/
+            /*width: 26px;*/
+            padding: 0 5px;
+            list-style-type: none;
+            text-align: center;
+        }
+        .three-point a {
+            display: inline-block;
+            height: 10px;
+            width: 10px;
+            border-radius: 50%;
+            background-color: whitesmoke;
+            text-decoration: none;
+        }
+        .content {
+            margin: 0 auto;
+            width: 968px;
+        }
+        .func {
+            overflow: hidden;
+            float: left;
+        }
+        .func li{
+            float: left;
+            /*width: 216px;*/
+            list-style-type: none;
+            padding-right: 15px;
+        }
+        #wangyeban {
+            display: block;
+            width: 200px;
+            height: 114px;
+            background: url(img/ban.png) no-repeat;
+        }
+        .func h2 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .func p {
+            color: #999;
+            margin: .33em 0;
+        }
+        .func a {
+            text-decoration: none;
+            color: #609700;
+            cursor: pointer;
+            outline: none;
+        }
+        #macban {
+            display: block;
+            width: 200px;
+            height: 114px;
+            background: url(img/ban.png) no-repeat -217px 0;
+            list-style-type: none;
+        }
+        #winban {
+            display: block;
+            width: 200px;
+            height: 114px;
+            background: url(img/ban.png) no-repeat -436px 0;
+            list-style-type: none;
+        }
+        .update_diary {
+            margin-left: 650px;
+            padding-bottom: 10px;
+            padding-top: 5px;
+        }
+
+        .update_diary ul {
+            padding-left: 10px;
+        }
+        .update_diary h2 {
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .update_diary a {
+            text-decoration: none;
+            color: #609700;
+            cursor: pointer;
+            outline: none;
+        }
+        .update_diary li {
+            list-style: disc outside;
+            line-height: 1.8;
+            color: #999;
+            margin: 5px 0;
+            white-space: nowrap;
+        }
+        .update_diary .style-red {
+            color: red;
+            font-size: 11px;
+        }
+        .update_diary .right {
+            float: right;
+            font-family: Courier New,Courier,monospace;
+        }
+        .knowus {
+            margin: 10px 0 5px;
+            display: block;
+        }
+        .applog {
+            position: relative;
+            top: 14px;
+            left: 0;
+        }
+        .footer {
+            width: 968px;
+            margin: 22px auto 0;
+            border-top: 1px solid #d4dadf;
+            font-size: 12px;
+            text-align: center;
+            color: #d8d8d8;
+            padding: 10px 0;
+        }
+        .footer .left {
+            float: left;
+            margin-left: 5px;
+        }
+
+        .footer .right {
+            float: right;
+        }
+
+        .footer-left {
+            float: left;
+            margin-left: 5px;
+        }
+        .footer ul {
+            height: 20px;
+            overflow: hidden;
+        }
+        li {
+            list-style-type: none;
+        }
+        .footer a {
+            color: #888;
+            padding: 0 4px;
+            text-decoration: none;
+        }
+
+        .footer p {
+            position: relative;
+            color: #888;
+            font-size: 11px;
+            top: 10px;
+            left: -28px;
+        }
+        .space {
+            background-color: #ccc;
+            width: 1px;
+            height: 10px;
+            margin-top: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo.png"  height="44" alt="">
+            </div>
+            <ul class="nav-ul">
+                <li class="sy-li">
+                    <a href="#">
+                        <span>首页</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>帮助与反馈</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>公众平台</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>开放平台</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>微信支付</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>微信广告</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>企业微信</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>表情开放平台</span>
+                    </a>
+                </li>
+                <li class="nav-li">
+                    <a href="#">
+                        <span>微信网页版</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div class="intro">
+            <h1 class="life">
+                <span>微信，是一个生活方式</span>
+            </h1>
+            <p class="Introduction">
+               超过十亿人使用的手机应用
+            </p>
+            <p class="Introduction">
+                支持发送语音短信、视频、图片和文字
+            </p>
+            <p class="Introduction">
+                可以群聊，仅耗少量流量，适合大部分智能手机
+            </p>
+            <a href="#" class="download"></a>
+            <ul class="ul-left">
+                <li>
+                    <span class="feature"></span>
+                    <a href="#" class="dot">忘记了微信帐号或密码?</a>
+                </li>
+                <li>
+                    <span class="feature"></span>
+                    <a href="#" class="dot">自助解除登录或功能限制</a>
+                </li>
+                <li>
+                    <span class="feature"></span>
+                    <a href="#" class="dot">冻结或解冻微信帐号</a>
+                </li>
+            </ul>
+            <div class="img">
+                <a href="" class="">
+                    <img src="img/computer.png" height="280" width="490" alt="">
+                </a>
+                <p style="text-align: center">
+                    微信 for iOS / Android
+                </p>
+                <p style="text-align: center">
+                    <a href="#" class="gray">iOS 7.0.5         Android 7.0.6</a>
+                </p>
+            </div>
+            <ul class="three-point">
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+                <li><a href=""></a></li>
+            </ul>
+        </div>
+        <div class="content">
+            <ul class="func">
+                <li>
+                    <a href="" id="wangyeban"></a>
+                    <h2>微信网页版</h2>
+                    <p>扫一扫二维码</p>
+                    <p>就能在浏览器上使用微信</p>
+                    <a href="#">了解更多</a>
+                </li>
+                <li>
+                    <a href="" id="macban"></a>
+                    <h2>微信 Mac 版</h2>
+                    <p>极致简洁，迅捷沟通</p>
+                    <a href="#">了解更多</a>
+                </li>
+                <li>
+                    <a href="" id="winban"></a>
+                    <h2>微信 Windows 版</h2>
+                    <p>让沟通更方便</p>
+                    <a href="#">了解更多</a>
+                </li>
+            </ul>
+            <div class="update_diary">
+                <h2>最新消息</h2>
+                <ul>
+                    <li>
+                        <a href="#">微信 7.0.6 for Android 正式版发布</a>
+                        <span class="style-red">(New)</span>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信 7.0.5 for iOS 正式版发布</a>
+                        <span class="style-red">(New)</span>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信 2.6.8 for Windows 正式版发布</a>
+                        <span class="style-red">(New)</span>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">关于部分 iOS 9 用户无法更新微信</a>
+                        <span class="style-red">(New)</span>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信外部链接内容管理规范</a>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信 2.3.6 for Mac 正式版发布</a>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信网页版 2.1 版本发布</a>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">微信表情开放平台上线</a>
+                        <div class="right">07-26</div>
+                    </li>
+                    <li>
+                        <a href="#">官方辟谣公众号开通</a>
+                        <div class="right">07-26</div>
+                    </li>
+                </ul>
+                <a href="#" class="knowus">查看更多</a>
+                <img src="img/wx-applogo.png"  class="applog" alt="">
+                <a href="#" >联系我们</a>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="left">
+                <ul>
+                    <li class="footer-left">
+                        <a href="#">关于腾讯</a>
+                    </li>
+                    <li class="space left"></li>
+                    <li class="footer-left">
+                        <a href="#">服务条款</a>
+                    </li>
+                    <li class="space left"></li>
+                    <li class="footer-left">
+                        <a href="#">使用规范</a>
+                    </li>
+                    <li class="space left"></li>
+                    <li class="footer-left">
+                        <a href="#">客服中心</a>
+                    </li>
+                    <li class="space left"></li>
+                    <li class="footer-left">
+                        <a href="#">隐私保护指引</a>
+                    </li>
+                </ul>
+                <p>© 1998 - 2019 Tencent Inc. All Rights Reserved</p>
+            </div>
+            <div class="right">
+                 <ul>
+                    <li class="left"><a href="">简体中文</a></li>
+                     <li class="space left"></li>
+                    <li class="left"><a href="">繁体中文</a></li>
+                     <li class="space left"></li>
+                    <li class="left"><a href="">English</a></li>
+                </ul>
+             </div>
+        </div>
+    </div>
+</body>
+</html>
