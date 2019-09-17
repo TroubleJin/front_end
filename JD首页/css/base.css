@@ -1,0 +1,220 @@
+/*版心*/
+.w {
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.fr {
+    float: right;
+}
+
+.fl {
+    float: left;
+}
+
+/*京东顶部开始start*/
+.J_promotional-top {
+    background-color: rgb(56, 18, 129);;
+}
+
+.J_promotional-top a {
+    background: url("../images/head.png") no-repeat;
+    display: block;
+    height: 80px;
+    position: relative;
+}
+
+.J_promotional-top>a>i {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    font-family: "icomoon";
+    font-style: normal;
+    background: #2d2d2d;
+    color: #fff;
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+}
+
+@font-face {
+     font-family: 'icomoon';
+     src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
+     src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+     url('../fonts/icomoon.woff') format('woff'), /* Modern Browsers */
+     url('../fonts/icomoon.ttf') format('truetype'), /* Safari, Android, iOS */
+     url('../fonts/icomoon.svg#svgFontName') format('svg') ;
+     font-weight: normal;
+     font-style: normal;
+}
+
+/*京东顶部开始end*/
+
+/*快捷导航栏开始*/
+.shortcut {
+    border-bottom: 1px solid #ddd;
+    background-color: #e3e4e5;
+    height: 30px;
+    line-height: 30px;
+    color: #999;
+    font-size: 12px;
+}
+
+.shortcut a {
+    color: #999;
+}
+
+.shortcut a:hover {
+    color: #f10215;;
+}
+
+.shortcut>.w>.fr>li {
+    float: left;
+    position: relative;
+}
+
+li  {
+    list-style-type: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+a  {
+    text-decoration: none;
+}
+.iconfont-location {
+    font-family: "icomoon";
+    font-style: normal;
+    font-size: 14px;
+    color: #f10215;
+    margin-right: 4px;
+}
+
+.spacer {
+    background-color: #ccc;
+    margin: 11px 15px 0;
+    width: 1px;
+    height: 10px;
+}
+
+.iconfont {
+    font-family: 'icomoon';
+    font-style: normal;
+    position: absolute;
+    font-size: 16px;
+    right: -2px;
+    top: -2px;
+}
+
+.style-red {
+    color: #f10215!important;
+}
+
+.dropdown {
+    padding-right: 15px;
+}
+
+.download_erweima {
+    position: relative;
+}
+
+.download {
+    position: absolute;
+    right: -8px;
+    top: 30px;
+    margin: 5px auto;
+    width: 66px;
+    height: 66px;
+    background: url("../images/download.png") no-repeat #fff center;
+    padding: 3px;
+    border: 1px solid #fff;
+}
+/*快捷导航栏结束*/
+
+/*header部分开始*/
+#header {
+    background: #fff;
+    border-bottom: 1px solid #ddd;
+    height: 140px;
+}
+/*header部分结束*/
+
+/*logo部分开始*/
+.logo {
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.inner {
+    background-color: pink;
+    height: 140px;
+    width: 1190px;
+    overflow: hidden;
+    position: relative;
+}
+
+.logo_tit {
+    display: inline-block;
+    width: 190px;
+    height: 140px;
+    position: absolute;
+}
+
+.logo_tit_lk {
+    display: inline-block;
+    background: url("../images/jd-logo.png") no-repeat;
+    width: 190px;
+    height: 120px;
+    position: absolute;
+    top: 10px;
+    text-indent: -2em;
+}
+
+.logo h1 {
+    margin: 0;
+}
+/*logo部分结束*/
+
+/*搜索部分开始*/
+.form {
+    /*display: inline-block;*/
+    width: 546px;
+    height: 36px;
+    border: 2px solid #e2231a;
+    background: #fff;
+    position: absolute;
+    top: 25px;
+    left: 260px;
+}
+
+.form input {
+    width: 425px;
+    height: 26px;
+    border: 1px solid transparent;
+    padding: 2px 44px 2px 17px;
+    outline: none;
+    line-height: 26px;
+    font-size: 12px;
+    position: relative;
+}
+
+.form button {
+    margin: 0;
+    padding: 0;
+    width: 50px;
+    height: 32px;
+    line-height: 32px;
+    border: none;
+    background-color: #e1251b;
+}
+input,button {
+    padding: 0;
+}
