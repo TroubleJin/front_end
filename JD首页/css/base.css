@@ -24,7 +24,7 @@
     position: relative;
 }
 
-.J_promotional-top>a>i {
+.J_promotional-top > a > i {
     width: 20px;
     height: 20px;
     position: absolute;
@@ -40,14 +40,11 @@
 }
 
 @font-face {
-     font-family: 'icomoon';
-     src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
-     src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-     url('../fonts/icomoon.woff') format('woff'), /* Modern Browsers */
-     url('../fonts/icomoon.ttf') format('truetype'), /* Safari, Android, iOS */
-     url('../fonts/icomoon.svg#svgFontName') format('svg') ;
-     font-weight: normal;
-     font-style: normal;
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/icomoon.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('../fonts/icomoon.woff') format('woff'), /* Modern Browsers */ url('../fonts/icomoon.ttf') format('truetype'), /* Safari, Android, iOS */ url('../fonts/icomoon.svg#svgFontName') format('svg') ;
+    font-weight: normal;
+    font-style: normal;
 }
 
 /*京东顶部开始end*/
@@ -70,12 +67,12 @@
     color: #f10215;;
 }
 
-.shortcut>.w>.fr>li {
+.shortcut > .w > .fr > li {
     float: left;
     position: relative;
 }
 
-li  {
+li {
     list-style-type: none;
 }
 
@@ -84,9 +81,10 @@ ul {
     padding: 0;
 }
 
-a  {
+a {
     text-decoration: none;
 }
+
 .iconfont-location {
     font-family: "icomoon";
     font-style: normal;
@@ -112,7 +110,7 @@ a  {
 }
 
 .style-red {
-    color: #f10215!important;
+    color: #f10215 !important;
 }
 
 .dropdown {
@@ -134,6 +132,7 @@ a  {
     padding: 3px;
     border: 1px solid #fff;
 }
+
 /*快捷导航栏结束*/
 
 /*header部分开始*/
@@ -142,6 +141,7 @@ a  {
     border-bottom: 1px solid #ddd;
     height: 140px;
 }
+
 /*header部分结束*/
 
 /*logo部分开始*/
@@ -181,40 +181,100 @@ a  {
 .logo h1 {
     margin: 0;
 }
+
 /*logo部分结束*/
 
 /*搜索部分开始*/
 .form {
-    /*display: inline-block;*/
+    position: absolute;
+    left: 260px;
+    top: 25px;
     width: 546px;
-    height: 36px;
+    height: 32px;
     border: 2px solid #e2231a;
     background: #fff;
-    position: absolute;
-    top: 25px;
-    left: 260px;
-}
-
-.form input {
-    width: 425px;
-    height: 26px;
-    border: 1px solid transparent;
-    padding: 2px 44px 2px 17px;
-    outline: none;
-    line-height: 26px;
-    font-size: 12px;
-    position: relative;
 }
 
 .form button {
-    margin: 0;
-    padding: 0;
-    width: 50px;
+    position: absolute;
+    border-radius: 0;
+    top: 0;
+    right: 0;
+    width: 58px;
     height: 32px;
     line-height: 32px;
     border: none;
     background-color: #e1251b;
+    font-size: 20px;
+    font-weight: 700;
+    color: #fff;
+    cursor: pointer;
 }
-input,button {
-    padding: 0;
+
+.form input {
+    left: 0;
+    padding: 2px 44px 2px 17px;
+    width: 425px;
+    height: 26px;
+    border: 1px solid transparent;
+    line-height: 26px;
+    font-size: 12px;
+    outline: none;
+}
+
+.photo-search-btn {
+    position: absolute;
+    right: 75px;
+    top: 8px;
+    width: 19px;
+    height: 15px;
+    overflow: hidden;
+    font-family: "icomoon";
+    cursor: pointer;
+}
+
+.photo-search-btn:hover {
+    color: red;
+}
+
+.form button i {
+    font-family: "icomoon";
+    font-style: normal;
+}
+
+#hotwords {
+    overflow: hidden;
+    position: absolute;
+    left: 260px;
+    top: 65px;
+    width: 550px;
+    height: 20px;
+    line-height: 20px;
+}
+
+#settleup {
+    position: absolute;
+    right: 230px;
+    top: 25px;
+}
+
+#settleup .cw-icon {
+    width: 130px;
+    height: 34px;
+    background-color: #fff;
+    text-align: center;
+    line-height: 34px;
+    border: 1px solid #e3e4e5;
+}
+
+.cw-icon i {
+    font-family: "icomoon";
+    font-style: normal;
+    color: #e1251b;
+}
+
+.mycar {
+    color: #c81623;
+    text-decoration: none;
+    margin-left: 13px;
 }
