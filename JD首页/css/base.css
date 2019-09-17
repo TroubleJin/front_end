@@ -4,6 +4,9 @@
     margin: 0 auto;
 }
 
+body {
+    font: 12px/1.5 Microsoft YaHei,Heiti SC,tahoma,arial,Hiragino Sans GB,"\5B8B\4F53",sans-serif;
+}
 .fr {
     float: right;
 }
@@ -154,7 +157,6 @@ a {
 }
 
 .inner {
-    background-color: pink;
     height: 140px;
     width: 1190px;
     overflow: hidden;
@@ -277,4 +279,31 @@ a {
     color: #c81623;
     text-decoration: none;
     margin-left: 13px;
+}
+
+#hotwords a {
+    float: left;
+    margin-right: 10px;
+    white-space: nowrap;
+    color: #999;
+    padding-right: 5px;
+}
+
+#navitems {
+    overflow: hidden;
+    position: absolute;
+    left: 203px;
+    bottom: 0;
+    height: 40px;
+    padding-top: 20px;
+}
+
+#navitems a {
+    display: inline-block;
+    font-weight: 700;
+    color: #333;
+    font-size: 15px;
+    padding: 0 11px;
+    height: 40px;
+    line-height: 40px;
 }
