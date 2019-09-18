@@ -307,3 +307,44 @@ a {
     height: 40px;
     line-height: 40px;
 }
+
+.fs {
+    height: 480px;
+    background-color: #f4f4f4;
+    overflow: hidden;
+    position: relative;
+}
+
+.fs_inner {
+    margin-top: 10px;
+}
+
+.fs_coll {
+    width: 190px;
+    height: 470px;
+    background-color: #fefefe;;
+}
+
+#fs_li {
+    padding-top: 10px;
+}
+
+.fs_li {
+    height: 25px;
+    width: 172px;
+    padding-left: 18px;
+}
+.fs_li a {
+    font-size: 14px;
+    color: #333;
+    height: 25px;
+    display: inline-block;
+    line-height: 25px;
+}
+
+.cate {
+    font-size: 12px;
+    line-height: 25px;
+    height: 25px;
+    display: inline-block;
+}
