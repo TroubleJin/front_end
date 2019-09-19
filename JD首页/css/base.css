@@ -439,7 +439,42 @@ a {
 
 .fs_col3 {
     width: 190px;
-    height: 200px;
-    background-color: black;
+    height: 102px;
+    float: left;
+    background-color: #fff;
+    position: relative;
 }
 
+
+.login_logo {
+    position: absolute;
+    top: 13px;
+    left: 20px;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    overflow: hidden;
+}
+
+.login_style {
+    display: block;
+    width: 40px;
+    height: 40px;
+    border: 0;
+    vertical-align: middle;
+}
+
+.user_show {
+    position: absolute;
+    top: 16px;
+    left: 74px;
+    right: 10px;
+}
+
+.user_show a {
+    color: #666;
+    height: 20px;
+    line-height: 20px;
+}
