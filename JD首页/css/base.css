@@ -320,9 +320,11 @@ a {
 }
 
 .fs_coll {
+    float: left;
     width: 190px;
     height: 470px;
-    background-color: #fefefe;;
+    background-color: #fefefe;
+    margin-right: 10px;
 }
 
 #fs_li {
@@ -347,4 +349,49 @@ a {
     line-height: 25px;
     height: 25px;
     display: inline-block;
+}
+
+.carousel {
+    float: left;
+    display: block;
+    position: relative;
+    background: url("../images/lbt.png") no-repeat;
+    width: 570px;
+    height: 470px;
+}
+
+.carousel-left {
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(0,0,0,.15);
+    margin-top: -20px;
+    font-size: 20px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    left: 0;
+    border-top-right-radius: 18px;
+    border-bottom-right-radius: 18px;
+}
+
+.carousel-right {
+    position: absolute;
+    top: 50%;
+    border-radius: 0;
+    width: 25px;
+    height: 35px;
+    line-height: 35px;
+    background-color: rgba(0,0,0,.15);
+    margin-top: -20px;
+    font-size: 20px;
+    z-index: 2;
+    border: none;
+    outline: none;
+    right: 0;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
 }
