@@ -478,3 +478,49 @@ a {
     height: 20px;
     line-height: 20px;
 }
+
+.user_show a:hover {
+    color: #e1251b;
+}
+
+.user_profit {
+    position: absolute;
+    /*top: 67px;*/
+    left: -20px;
+    height: 25px;
+    background-color: pink;
+}
+
+.user_profit_fl {
+    background-color: #e1251b;
+    position: absolute;
+    top: 46px;
+    left: -50px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    border-radius: 13px;
+    color: #fff!important;
+}
+
+.user_profit_fl:hover {
+    background-color: #c81623;
+    color: #fff;
+}
+
+.user_profit_hy {
+    background-color: #363634;
+    position: absolute;
+    top: 46px;
+    left: 30px;
+    height: 25px;
+    width: 70px;
+    text-align: center;
+    border-radius: 13px;
+    color: #e5d790!important;
+}
+
+.user_profit_hy:hover {
+    background-color: #c81623;
+    color: #fff;
+}
