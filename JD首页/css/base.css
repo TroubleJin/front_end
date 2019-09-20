@@ -593,4 +593,31 @@ a {
     width: 190px;
     position: relative;
     overflow: hidden;
+    padding-top: 10px;
+}
+
+.service_entry ul {
+    overflow: hidden;
+}
+.service_entry li {
+    position: relative;
+    float: left;
+    width: 63px;
+    height: 55px;
+}
+
+.service_entry a{
+    display: block;
+    width: 63px;
+    height: 55px;
+    text-align: center;
+}
+.font-pos:hover{
+    color: #e1251b;
+}
+
+.font-pos {
+    line-height: 20px;
+    height: 20px;
+    color: #333;;
 }
