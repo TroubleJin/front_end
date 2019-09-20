@@ -373,6 +373,7 @@ a {
     border-radius: 0;
     width: 25px;
     height: 35px;
+    margin-top: -20px;
     line-height: 35px;
     background-color: rgba(0,0,0,.15);
     margin-bottom: 20px;
@@ -498,7 +499,7 @@ a {
 .user_profit_fl {
     background-color: #e1251b;
     position: absolute;
-    top: 46px;
+    top: 50px;
     left: -50px;
     height: 25px;
     width: 70px;
@@ -515,7 +516,7 @@ a {
 .user_profit_hy {
     background-color: #363634;
     position: absolute;
-    top: 46px;
+    top: 50px;
     left: 30px;
     height: 25px;
     width: 70px;
