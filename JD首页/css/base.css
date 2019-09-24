@@ -331,6 +331,7 @@ a {
     height: 470px;
     background-color: #fefefe;
     margin-right: 10px;
+    position: relative;
 }
 
 #fs_li {
@@ -621,4 +622,19 @@ a {
     line-height: 20px;
     height: 20px;
     color: #333;;
+}
+
+.bgpinpai {
+    display: block;
+    overflow: hidden;
+    position: absolute;
+    left: 200px;
+    width: 350px;
+    height: 470px;
+}
+
+.pinpai {
+    width: 160px;
+    height: 480px;
+    display: block;
 }
